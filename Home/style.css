@@ -69,6 +69,9 @@ main{
     #burger-menu{
         display: none;
     }
+    #phone-navigation-menu{
+        display: none;
+    }
     .nav > div{
         font-size: 1.4rem;
         width: max-content;
@@ -122,6 +125,53 @@ main{
     .nav > div{
         margin: 0.5rem;
         padding: 1rem;
+    }
+    #phone-navigation-menu{
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    #phone-navigation-menu.active{
+        top: 0 !important;
+    }
+    #exit-cross{
+        margin: 1rem 2rem;
+        height: 78px;
+        width: 78px;
+        cursor: pointer;
+    }
+    #exit-cross > div{
+        position: absolute;
+        width: 60px;
+        border: 3px solid white;
+        border-radius: 3px;
+        top: calc(1rem + 39px);
+    }
+    #exit-cross > div:first-child{
+        transform: rotate(45deg);
+    }
+    #exit-cross > div:nth-child(2){
+        transform: rotate(-45deg);
+    }
+    #phone-navigation-menu > .navigation{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    .phone-nav-link{
+        text-align: center;
+        font-size: 1.7rem;
+        padding: 1rem;
+    }
+    .phone-nav-link > a{
+        text-decoration: none;
+        color: white;
     }
     .hero > .text-container{
         text-align: center;
