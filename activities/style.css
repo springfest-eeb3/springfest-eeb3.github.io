@@ -1,0 +1,25 @@
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero > div{
+    width: calc(100vw - 2rem);
+    max-width: 1500px;
+    margin: auto;
+}
+h1{
+    font-size: 8rem;
+    padding: 3rem 0;
+}
+.hero p{
+    font-size: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    h1{
+        font-size: 5rem;
+    }
+}
