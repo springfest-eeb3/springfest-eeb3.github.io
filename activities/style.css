@@ -18,6 +18,42 @@ h1{
 .hero p{
     font-size: 2rem;
 }
+.activity{
+    width: 100vw;
+    display: flex;
+    flex-flow: row;
+    margin-bottom: 3rem;
+}
+.activity-img{
+    width: 45vw;
+    padding: 0 2.5vw;
+}
+.activity > div:nth-child(1){
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 45vw;
+    margin: 2vw;
+    font-size: 1.3rem;
+}
+.activity h2{
+    font-size: 3.5rem;
+    padding: 2rem 0;
+}
+.activity p{
+    margin-bottom: 1rem;
+}
+.activity a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.img-left > div:nth-child(1){
+    order: 2;
+}
+.img-left > div:nth-child(2){
+    order: 1;
+}
+
 @media screen and (max-width: 1000px) {
     h1{
         font-size: 5rem;
