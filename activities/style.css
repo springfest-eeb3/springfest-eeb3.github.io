@@ -21,18 +21,11 @@ h1{
 .activity{
     width: 100vw;
     display: flex;
-    flex-flow: row;
-    margin-bottom: 3rem;
-}
-.activity-img{
-    width: 45vw;
-    padding: 0 2.5vw;
 }
 .activity > div:nth-child(1){
     display: grid;
     align-items: center;
     text-align: center;
-    width: 45vw;
     margin: 2vw;
     font-size: 1.3rem;
 }
@@ -47,15 +40,40 @@ h1{
     font-size: 1.5rem;
     text-decoration: none;
 }
-.img-left > div:nth-child(1){
-    order: 2;
-}
-.img-left > div:nth-child(2){
-    order: 1;
-}
 
 @media screen and (max-width: 1000px) {
     h1{
         font-size: 5rem;
+    }
+    .activity{
+        flex-flow: column;
+        margin-bottom: 1rem;
+    }
+    .activity > div:nth-child(1){
+        width: calc(100vw - 2rem);
+        margin: 1rem;
+    }
+    .activity-img{
+        width: calc(100vw - 2rem);
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .activity{
+        flex-flow: row;
+        margin-bottom: 3rem;
+    }
+    .img-left > div:nth-child(1){
+        order: 2;
+    }
+    .img-left > div:nth-child(2){
+        order: 1;
+    }
+    .activity-img{
+        width: 45vw;
+        padding: 0 2.5vw;
+    }
+    .activity > div:nth-child(1){
+        width: 45vw;
     }
 }
