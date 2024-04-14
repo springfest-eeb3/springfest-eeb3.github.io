@@ -1,5 +1,5 @@
 .hero{
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
     display: grid;
     justify-content: center;
@@ -43,7 +43,7 @@ h1{
 
 @media screen and (max-width: 1000px) {
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .activity{
         flex-flow: column;

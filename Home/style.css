@@ -23,7 +23,7 @@ main{
 }
 @media screen and (min-width: 1000px) {
     .hero{
-        height: calc(100vh - 6rem);
+        min-height: calc(100vh - 6rem);
         display: grid;
         grid-template-columns: 1fr max-content;
         align-items: center;
