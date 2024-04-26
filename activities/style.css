@@ -54,7 +54,8 @@ h1{
         margin: 1rem;
     }
     .activity-img{
-        width: calc(100vw - 2rem);
+        max-height: 80vh;
+        max-width: calc(100vw - 2rem);
         padding: 1rem;
     }
 }
@@ -69,8 +70,15 @@ h1{
     .img-left > div:nth-child(2){
         order: 1;
     }
+    .activity > div:nth-child(2){
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+    }
     .activity-img{
-        width: 45vw;
+        max-height: 80vh;
+        max-width: 45vw;
         padding: 0 2.5vw;
     }
     .activity > div:nth-child(1){
