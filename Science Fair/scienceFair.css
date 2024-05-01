@@ -1,0 +1,307 @@
+body {
+    background-image: url('testing_initiative.png');
+    image-resolution: 10px;
+    text-align: center;
+    font-family: fantasy;
+}
+:root {
+    --pastel_blue: #77BBFE;
+    --dark_pastel_blue: #51B5D8;
+    --light_blue: #A9F2FF;
+    --blue: #00D8FF;
+    --dark_blue: #0B6597;
+    --light_purple: #D481FE;
+    --purple: #8B5Cf6;
+    --darker_purple: #9014CA;
+    --darkest_purple: #6209AB;
+    --pastel_purple: #DAB4EA;
+    --dark_pastel_purple: #CB6FFC;
+    --white: #EEE;
+    --pink: #F169AD;
+    --pastel_pink: #F097EF;
+    --darker_pink: #F30DBC;
+    --dark_pastel_pink: #BE04AB;
+    --red: #FE6360;
+    --shadow_red: #E04744;
+    --gray: #6B7280;
+    --light_gray: #D0CED0;
+    --dark: #303039;
+    --pastel_yellow: #FCFE77;
+    --background_yellow: #BAAE60;
+    --light_green: #81FE95;
+    --green: #20C348;
+    --dark_green: #037E36;
+    --pastel_green: #B5EAB4;
+    --light_pastel_green: #DAF7A6;
+    --dark_pastel_green: #62D173;
+    --link1: #0DADFC;
+    --link2: #A6F7EB;
+    --link3: #A6DAF7;
+    --link4: #7DA4B9;
+    --nina_orange: #FFA33C;
+    --nina_shadow_orange: #FF8804;
+}
+.heading {
+    background-color: var(--pastel_yellow);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--background_yellow);
+    text-align: center;
+    width: 510px;
+    margin: auto;
+}
+.headingIT {
+    background-color: var(--gray);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--dark);
+    text-align: center;
+    width: 510px;
+    margin: auto;
+}
+.headingChi {
+    background-color: var(--dark_pastel_purple);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--darkest_purple);
+    text-align: center;
+    width: 510px;
+    margin: auto;
+}
+.headingBio {
+    background-color: var(--dark_pastel_green);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--green);
+    text-align: center;
+    width: 510px;
+    margin: auto;
+}
+.headingPhy {
+    background-color: var(--pastel_blue);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--dark_pastel_blue);
+    text-align: center;
+    width: 510px;
+    margin: auto;
+}
+.headingTxt {
+    margin: 20px;
+    color: #000;
+}
+.activityDiv > * {
+    display: inline-block;
+    vertical-align: left;
+}
+.physicsShow {
+    background-color: var(--pastel_blue);
+    color: var(--link3);
+    border-radius: 10px;
+    box-shadow: 0 0 15px 15px var(--link1);
+    padding: auto;
+    margin: 20px;
+    width: 520px;
+}
+.quickLookPhy {
+    background-color: var(--link3);
+    color: var(--link2);
+    width: 300px;
+    margin-left: 110px;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px var(--link4);
+}
+p {
+    padding: 5px;
+}
+h1 {
+    padding: 5px;
+}
+h4 {
+    padding: 5px;
+    font-size: x-large;
+}
+.biologyShow {
+    background-color: var(--dark_pastel_green);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--green);
+    padding: auto;
+    margin: 20px;
+    width: 520px;
+    color: var(--dark_green);
+}
+.quickLookBio {
+    background-color: var(--pastel_green);
+    color: var(--pastel_pink);
+    width: 300px;
+    margin-left: 110px;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px var(--dark_green);
+}
+.chemistryShow {
+    background-color: var(--purple);
+    color: var(--darkest_purple);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--darker_purple);
+    padding: auto;
+    margin: 20px;
+    width: 520px;
+}
+.quickLookChi {
+    background-color: var(--pastel_pink);
+    color: var(--pastel_purple);
+    width: 300px;
+    margin-left: 110px;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px var(--pink);
+}
+.itWorkshop {
+    background-color: var(--gray);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px var(--dark);
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 520px;
+}
+.quickLookIT {
+    background-color: var(--pastel_blue);
+    color: var(--light_gray);
+    width: 300px;
+    margin-left: 110px;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 5px var(--link1);
+}
+.activityDiv a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.activityDiv a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--white);
+    position: absolute;
+    left: 4px;
+    bottom: 15px;
+    transition: 0.5s;
+}
+.linkAct {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    background-color: #000;
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.linkBio {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    background-color: var(--dark_green);
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.linkPhy {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    background-color: var(--dark_blue);
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.linkChi {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    background-color: var(--darkest_purple);
+    width: 120px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.back {
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    position: relative;
+    background-color: var(--link4);
+    width: 360px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+}
+.activityDiv a:hover::after {
+    width: 80%;
+    margin-left: 7px;
+}
+.backDiv > * {
+    display: inline-block;
+    vertical-align: left;
+}
+.backDiv a {
+    text-decoration: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+.backDiv a::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: var(--white);
+    position: absolute;
+    left: 4px;
+    bottom: 15px;
+    transition: 0.5s;
+}
+.backDiv a:hover::after {
+    width: 51%;
+    margin-left: 85px;
+}
+.h4_IT {
+    background-color: var(--link4);
+    padding: 5px;
+    border-radius: 100px;
+    width: 800px;
+}
+.h4_Chi {
+    background-color: var(--light_purple);
+    padding: 5px;
+    border-radius: 100px;
+    width: 800px;
+}
+.h4_Phy {
+    background-color: var(--blue);
+    padding: 5px;
+    border-radius: 100px;
+    width: 800px;
+}
+.h4_Bio {
+    background-color: var(--pastel_green);
+    padding: 5px;
+    border-radius: 100px;
+    width: 800px;
+}
+.troubleshoot {
+    background-color: var(--red);
+    box-shadow: 0 0 7.5px 7.5px var(--shadow_red);
+    width: 1400px;
+}
+.credit {
+    background-color: var(--nina_orange);
+    box-shadow: 0 0 2px 2px var(--nina_shadow_orange);
+    width: 300px;
+    margin-left: 550px;
+}
