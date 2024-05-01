@@ -1,230 +1,37 @@
-body {
-  background-color: lightblue;
+main{
+    margin-top: 6rem;
 }
 
-h1 {
-  color: black;
-margin-left: 20px;}
-
-h2 {
-	color: green;
-margin-left: 20px;} 
-
-h3 {
-	color: blue;
-margin-left: 40px;} 
-
-
-h1 {
-	text-align: center;
-}
-
-h2 {
-	text-align: center;
+h1{
+    font-size: 4rem;
+    padding: 3rem 0;
 }
 
 h3 {
-	text-align: center;
+    text-align: center;
 }
 
-.center {
-  display: block;
+hr {
+   width: 400px; 
+   align-self: center;
+}
+
+.Introduction {
+    text-align: center;
+}
+
+.menuFnd {
+    display: grid;
+    flex-flow: column;
+}
+
+.center{
+    display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-div.food {
-  text-align: center;
+.info > div{
+    font-style: bold;
 }
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-
-div.drinks {
-  text-align: center;
-}
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-
-div.steps {
-  text-align: center;
-}
-
-ul.myUL {
-  display: inline-block;
-  text-align: left;
-}
-
-p {
-  animation-duration: 5s;
-  animation-iteration-count: 1;
-  animation-direction: alternate;
-  animation-name: slidein;
-  
-}
- @keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-   to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-span {
-  animation-duration: 3s;
-  animation-name: slide-right;
-}
- @keyframes slide-right {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
-   to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-
-
-@keyframes scaleProgress {
-  0% {
-    transform: scaleX(0);
-  }
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.progress {
-	animation-timeline: scroll(root)
-	animation-name: scaleProgress;
-	animation-duration: auto;
-	animation-timing-function: linear;
-}
-body,
-html,
-h1 {
-  margin: 0;
-  padding: 0;
-}
-h1 {
-  color: black;
-  font-size: 4rem;
-  text-align: center;
-}
-section {
-  height: 100vh;
-}
-.tag {
-}
-
-.tag {
-  opacity: 0;
-  transform: translate(0, 10vh);
-  transition: all 1s;
-}
-
-.tag.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-
-}
-
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20vh);
-  visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
-  will-change: opacity, visibility;
-}
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-} 
-.collapsible {
-    max-width: 40em;
-    border: 1px solid black;
-    border-radius: 0.5rem;
-}
-.collapsor-lbl:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.collapsor-lbl {
-    text-align: center;
-    padding: 0.5rem 1rem;
-}
-.collapsible-content {
-    padding: 0.5rem;
-    border-top: 1px solid black;
-}
-.collapsor-lbl {
-    display: block;
-}
-.collapsor, .collapsible-content {
-    display: none;
-}
-.collapsor:checked ~ .collapsible-content {
-    display: block;
-}
-:root {
-  font-family: sans-serif;
-}
-
-div.collapsible-container {
-  display: flex;
-  flex-wrap: nowrap
-}
-  div.collapsible-container > details {
-    flex-basis: 300px;
-    flex-grow: 1;
-    flex-shrink: 1;
-  }
-
-
-details {
-  background-color: #777;
-  border: 1px solid black;
-  overflow: hidden;
-}
-details[open] {
-  background-color: black;
-}
-
-  details > summary {
-    color: white;
-    padding: 1em;
-    cursor: pointer;
-  }
-  details > summary:hover {
-    background-color: black;
-  }
-  details > summary:active {
-    background-color: pink;
-  }
-    details > summary::before {
-      display: inline;
-    }
-    details[open] > summary::before {
-      content: 'Close ';
-    }
-    details:not([open]) > summary::before {
-      content: 'Open ';
-    }
-  
-  details > summary + div {
-    background-color: #f1f1f1;
-    padding: 0.5em;
-  }
-
